@@ -134,3 +134,22 @@
 .floating-contact-form form input[type = "submit"]:hover {
     background: #00659b;
 }
+@media only screen and (max-width:700px){
+    .floating-contact-form .form-container {
+        position: fixed;
+        bottom: 120px;
+        right: 10px;
+        padding: 20px 30px;
+        width: 100%;
+        font-family: "Roboto" , sans-serif;
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+    
+        transform: rotateZ(-6deg);
+        transform-origin: bottom right;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 500ms ease;
+    }
+    
+}
